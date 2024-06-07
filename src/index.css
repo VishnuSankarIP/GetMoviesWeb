@@ -1,0 +1,330 @@
+body {
+    overflow-x: hidden;
+  
+  
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  
+  }
+  
+  /* HomePage */
+  .hero-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 30px;
+    background: url(./assets/Poster.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-image::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .hero-content {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin: 0  auto; */
+    margin-left: 20px;
+  
+  }
+  
+  .hero-content-inner {
+    text-align: left;
+    margin-left: start;
+    font-family: "DM Sans";
+  }
+  
+  .hero-content-inner h2 {
+  
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content-inner p {
+    width: 58%;
+    /* margin: 0 auto; */
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    line-height: 22px;
+    padding: 10px;
+    margin-inline-end: 0 auto;
+    /* text-align: justify; */
+  }
+  
+  .hero-content-inner button {
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+  
+  }
+  
+  @media(max-width:768px) {
+    .hero-content {
+      width: 100%;
+    }
+  
+    .hero-content-inner h1 {
+      font-size: 30px;
+    }
+  
+    .hero-content-inner p {
+      width: 100%;
+      font-size: 13px;
+      margin-inline-end: auto;
+    }
+  
+    .hero-content-inner button {
+      width: 100px;
+      height: 40px;
+      font-size: 10px;
+  
+    }
+  
+    .movieInput {
+      width: 80%;
+      align-items: center;
+    }
+   
+  }
+  
+  @media(max-width:768px){
+    .hero-content {
+      width: 100%;
+    }
+    .hero-content-inner p {
+      width: 80%;
+      font-size: 13px;
+      margin-inline-end: auto;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .btn1 {
+    background-color: #FF0059;
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 476px;
+  
+    margin-left: 5px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  #search-icon {
+    color: grey;
+  }
+  
+  
+  .title {
+    margin-left: 120px;
+  }
+  
+  .headl {
+  
+    margin-left: 90px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .headf {
+    margin-left: 90px;
+  }
+  
+  
+  
+  @media (orientation: portrait) {
+    .input {
+      width: 100%;
+      margin-right: 20px;
+    }
+  
+    .headl {
+      margin-left: 40px;
+      font-size: 20px;
+    }
+  
+    .moviecard {
+      margin-inline-start: 40px;
+      margin-inline-end: 40px;
+    }
+  
+    .headf {
+      margin-left: auto;
+    }
+  
+  
+  }
+  
+  /* favorites */
+  
+  .favinput-wrapper {
+  
+    box-shadow: 0px 0px 8px #ddd;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 30%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  
+  
+  }
+  
+  .favinput {
+    width: fit-content;
+  }
+  
+  .btnBack {
+  
+    background-color: white;
+    border-color: black;
+    border-radius: 30px;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .fa-chevron-left{
+  padding: 3px;
+  }
+  
+  .Myfont {
+    font-size: 25px;
+    
+  }
+  @media(max-width:768px){
+  
+    .headf {
+      margin-left: auto;
+    } 
+   
+  }
+  @media(max-width:500px){
+    .headf {
+      margin-left: auto;
+    }
+  
+  }
+  
+  @media (orientation: portrait) {
+    .Myfont {
+      font-size: 12.5px;
+  
+    }
+  
+    .btnBack {
+  
+      background-color: white;
+      border-color: black;
+      border-radius: 30px;
+      padding: 8px;
+      width: 32px;
+      height: 32px;
+  
+  
+    }
+  
+    .favinput {
+      width: auto;
+    }
+  
+    .favinput-wrapper {
+      width: auto;
+    }
+    .headf {
+      margin-right: auto;
+    }
+    
+  
+  }
+  
+  
+  /* moviecard */
+  
+  
+  .btn-wishlist {
+    background-color: #f3f4f635;
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-wishlist i {
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .btn-wishlist.active i {
+    color: red;
+  }
